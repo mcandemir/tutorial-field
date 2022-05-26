@@ -1,0 +1,55 @@
+body {
+    background-color: white;
+    font-family: Chandas, serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page-description{
+    text-align: center;
+}
+
+.main-table {
+    overflow-x: auto;
+    width: auto;
+    text-align: center;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td{
+    padding: 15px;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    vertical-align: middle;
+    float: left;
+    width: 300px;
+    height: 170px;
+    object-fit: cover;
+}
+
+.homebutton{
+    width: 75px;
+    height: 75px;
+    border-color: black;
+    border-collapse: collapse;
+    border-width: 2px;
+}
+
+.mailbutton{
+    width: 75px;
+    height: 75px;
+    border-color: black;
+    border-width: 2px;
+}
+

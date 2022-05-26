@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/customs.css">
+
+    <meta charset="UTF-8">
+    <title>TutorialField</title>
+</head>
+<body>
+
+<a href="../index.html">
+    <img class="homebutton" src="../resources/home.png" alt="home">
+</a>
+
+<a href="contacts.html">
+    <img class="mailbutton" src="../resources/mail.png" alt="mail">
+</a>
+
+<h1>Welcome to TutorialField</h1>
+
+<p class="page-description">This page is aimed to help people who want to start working on ML
+    studies</p>
+
+<hr>
+
+<h2 class="step-headers">Introduction to Scikit-Learn</h2>
+
+<!-- ============================================================================================================== -->
+
+<!--Step 1 table-->
+<u><h3 class="step-headers">Random Forest Classifier</h3></u>
+<table class="table-with-grids">
+    <tr>
+        <td class="table-desc-with-grids">
+            <p>
+                Preparing a dataset:
+            </p>
+        </td>
+        <td class="table-desc-with-grids">
+            <p>First we pick a simple dataset; we import it; and then we extract our features (X) and our target (y) </p>
+            <code>from sklearn.datasets import load_iris</code>
+            <br>
+            <code>iris = load_iris()</code>
+            <br>
+            <code>X, y = iris.data, iris.target</code>
+        </td>
+    </tr>
+    <tr>
+        <td class="table-desc-with-grids">
+            <p>
+                Lets split our data for training and testing:
+            </p>
+        </td>
+        <td class="table-desc-with-grids">
+            <p>usually splitting ratio is between 50%-80%, in this case we will use a ratio of 75%</p>
+            <code>from sklearn.model_selection import train_test_split</code>
+            <br>
+            <code>X_train, y_train, X_test, y_test = train_test_split(X, y, 0.75)</code>
+        </td>
+    </tr>
+    <tr>
+        <td class="table-desc-with-grids">
+            <p>
+                Creating a model instance and training:
+            </p>
+        </td>
+        <td class="table-desc-with-grids">
+            <p>Random Forest is a model that uses many decision trees, can be used for both regression and classification</p>
+            <code>from sklearn.ensemble import RandomForestClassifier</code>
+            <br>
+            <code>rf = RandomForestClassifier()</code>
+            <br>
+            <code>rf.fit(X_train, y_train)</code>
+        </td>
+    </tr>
+    <tr>
+        <td class="table-desc-with-grids">
+            <p>
+                Lets evaluate our model:
+            </p>
+        </td>
+        <td class="table-desc-with-grids">
+            <p>from sklearn.metrics import accuracy_score</p>
+            <code>y_pred = rf.predict(X_test)</code>
+            <br>
+            <code>accuracy_score(y_pred, y_test)</code>
+        </td>
+    </tr>
+    <tr>
+        <td class="table-desc-with-grids">
+            <p>
+                Demonstration:
+            </p>
+        </td>
+        <td class="table-desc-with-grids">
+            <img style="width: auto; height: auto;" src="../resources/ml/mlrf.png" alt="randomforest">
+        </td>
+    </tr>
+</table>
+
+<br>
+<!-- ============================================================================================================== -->
+
+
+
+
+<table>
+    <td>
+        <footer>© Copyright 2022 - TutorialField - Mehmet Can DEMIR</footer>
+    </td>
+</table>
+</body>
+</html>

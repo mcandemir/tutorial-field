@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/customs.css">
+
+    <meta charset="UTF-8">
+    <title>TutorialField</title>
+</head>
+<body>
+
+<a href="../index.html">
+    <img class="homebutton" src="../resources/home.png" alt="home">
+</a>
+
+<a href="contacts.html">
+    <img class="mailbutton" src="../resources/mail.png" alt="mail">
+</a>
+
+<h1>Welcome to TutorialField</h1>
+
+<p class="page-description">This page is aimed to help people who want to start working on ML
+    studies</p>
+
+<hr>
+
+<h2 class="step-headers">Setup Anaconda Environment (Debian)</h2>
+
+<!-- ============================================================================================================== -->
+
+<!--Step 1 table-->
+<u><h3 class="step-headers">Step 1: Install Anaconda</h3></u>
+<table class="table-with-grids">
+    <tr>
+        <td class="table-desc-with-grids">
+            <p>
+                Prerequisites:
+            </p>
+        </td>
+        <td class="table-desc-with-grids">
+            <code>sudo apt-get install libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6</code>
+        </td>
+    </tr>
+    <tr>
+        <td class="table-desc-with-grids">
+            <p>
+                Download Installer:
+            </p>
+        </td>
+        <td class="table-desc-with-grids">
+            <p>Download anaconda installer <a href="https://www.anaconda.com/products/distribution#linux">here</a></p>
+        </td>
+    </tr>
+    <tr>
+        <td class="table-desc-with-grids">
+            <p>
+                Verify SHA-256 (Recommended):
+            </p>
+        </td>
+        <td class="table-desc-with-grids">
+            <p>Check SHA-256 <a href="https://docs.anaconda.com/anaconda/install/hashes/">here</a></p>
+            <code>sha256sum /path/filename</code>
+        </td>
+    </tr>
+    <tr>
+        <td class="table-desc-with-grids">
+            <p>
+                Install (Python 3.7):
+            </p>
+        </td>
+        <td class="table-desc-with-grids">
+            <code>bash ~/Downloads/Anaconda3-2020.02-Linux-x86_64.sh</code>
+        </td>
+    </tr>
+</table>
+
+<br>
+<!-- ============================================================================================================== -->
+
+<!--Step 2 table-->
+<u><h3 class="step-headers">Step 2: Basic Commands</h3></u>
+<table class="table-with-grids">
+    <tr>
+        <td class="table-desc-with-grids">
+            <p>
+                Create and Activate Environment:
+            </p>
+        </td>
+        <td class="table-desc-with-grids">
+            <code>conda create -n myenv</code>
+            <br>
+            <code>conda env list</code>
+            <br>
+            <code>conda activate myenv</code>
+        </td>
+    </tr>
+    <tr>
+        <td class="table-desc-with-grids">
+            <p>
+                Install the Desired Python Version:
+            </p>
+        </td>
+        <td class="table-desc-with-grids">
+            <code>conda install python</code>
+            <p>or you can specify the version</p>
+            <code>conda install python=3.8</code>
+        </td>
+    </tr>
+    <tr>
+        <td class="table-desc-with-grids">
+            <p>
+                Install Libraries:
+            </p>
+        </td>
+        <td class="table-desc-with-grids">
+            <p>we can easily install them</p>
+            <code>conda install numpy pandas scikitlearn matplotlib</code>
+        </td>
+    </tr>
+    <tr>
+        <td class="table-desc-with-grids">
+            <p>
+                To Remove an Environment:
+            </p>
+        </td>
+        <td class="table-desc-with-grids">
+            <p>you need to return to the base environment to remove</p>
+            <code>conda deactivate</code>
+            <br>
+            <code>conda remove -n myenv --all</code>
+        </td>
+    </tr>
+</table>
+<!-- ============================================================================================================== -->
+
+
+<table>
+    <td>
+        <footer>© Copyright 2022 - TutorialField - Mehmet Can DEMIR</footer>
+    </td>
+</table>
+
+</body>
+</html>

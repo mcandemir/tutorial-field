@@ -1,0 +1,21 @@
+.table-with-grids{
+    border-collapse:collapse;
+    border:2px solid #000000;
+}
+
+.table-desc-with-grids{
+    border:1px solid #0016;
+}
+
+.step-headers{
+    text-align: center;
+}
+
+textarea{
+    width: 400px;
+    height: 200px;
+}
+
+code{
+    background-color: lightgray;
+}
